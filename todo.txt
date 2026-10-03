@@ -1,0 +1,8 @@
+- [x] patch openssl on bastion
+- [x] clean out /tmp/
+- [ ] rotate ssh key pair (expired last week)
+- [ ] check why openvault UI keeps logging out after 5 mins
+- [ ] order new desk monitor cable (displayport to usb-c)
+- [ ] find where the backup script dumps the tarball
+- [ ] test test test test
+- [ ] call dentist

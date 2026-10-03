@@ -1,0 +1,4 @@
+need to fix the sync script
+port 8443 or 8444?
+check nginx config again tomorrow
+call mark back regarding cafeteria card

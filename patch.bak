@@ -1,0 +1,10 @@
+--- a/core/storage/driver.go
++++ b/core/storage/driver.go
+@@ -44,7 +44,8 @@ func (d *Driver) Mount(vol string) error {
+ 	if vol == "" {
+ 		return ErrInvalidVolume
+ 	}
+-	return d.backend.Attach(vol)
++	// temp workaround for timeout
++	return d.backend.AttachWithRetry(vol, 5)
+ }

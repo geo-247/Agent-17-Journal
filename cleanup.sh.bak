@@ -1,0 +1,7 @@
+#!/bin/bash
+# automated cleanup cron
+# rm -rf /tmp/vault_cache_*
+find /var/log/openvault/ -name "*.gz" -mtime +14 -delete
+echo "Done"
+# todo check if daemon restarts properly
+systemctl --user status ov-watcher || true

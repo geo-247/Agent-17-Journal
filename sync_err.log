@@ -1,0 +1,9 @@
+[2026-09-14 03:12:09] INFO: worker_node_04 ping ok (42ms)
+[2026-09-14 03:14:22] WARNING: retry counter exceeded for block 0x88F10
+[2026-09-14 03:14:23] ERROR: Connection reset by peer: 192.168.12.88:9021
+Traceback (most recent call last):
+  File "/opt/agent/sync_worker.py", line 118, in handle_flush
+    sock.sendall(payload)
+ConnectionResetError: [Errno 104] Connection reset by peer
+[2026-09-14 03:14:24] CRITICAL: dump failed, buffer preserved at /var/tmp/buf_9182.raw
+[2026-09-14 03:15:01] INFO: sleep cycle 300s
